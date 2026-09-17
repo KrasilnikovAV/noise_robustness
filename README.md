@@ -38,12 +38,19 @@ generated once and reused. Macro-F1 and retention are reported on a 0–1 scale.
 ## Results
 
 <!-- RESULTS START -->
-Experiments have not finished. No result values are available yet.
+Macro-F1 (0–1 scale):
+
+| Model | 0% | 5% | 10% | 20% | 30% |
+|---|---:|---:|---:|---:|---:|
+| Word TF-IDF + LR | 0.9208 | 0.9189 | 0.9151 | 0.9113 | 0.9022 |
+| Char TF-IDF + LR | 0.9204 | 0.9193 | 0.9190 | 0.9175 | 0.9113 |
+| DistilBERT | 0.9445 | 0.9437 | 0.9419 | 0.9394 | 0.9289 |
+| DistilBERT + typo augmentation | 0.9444 | 0.9424 | 0.9422 | 0.9396 | 0.9334 |
 <!-- RESULTS END -->
 
 ## Plot
 
-The run generates `results/robustness_curve.png`.
+![Robustness curve](results/robustness_curve.png)
 
 ## Files
 
